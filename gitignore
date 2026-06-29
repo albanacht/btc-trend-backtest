@@ -1,0 +1,6 @@
+.env
+__pycache__/
+*.pyc
+equity_curve.png
+.venv/
+venv/
