@@ -24,7 +24,7 @@ CONFIG = {
     # --- account & realism (the stuff TradingView faked) ---
     "initial_capital": 4000.0,
     "position_fraction": 1.0,     # fraction of equity used as margin per trade
-    "leverage": 2.0,              # <-- try 1, 2, 3. Watch what it does to drawdown.
+    "leverage": 1.0,              # <-- try 1, 2, 3. Watch what it does to drawdown.
     "taker_fee": 0.0004,          # 0.04% Binance futures taker
     "maint_margin_rate": 0.005,   # 0.5%
     "daily_funding_rate": None,   # None => auto-fetch avg; or set e.g. 0.0003
