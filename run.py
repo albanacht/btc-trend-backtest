@@ -31,7 +31,7 @@ CONFIG = {
 
     # --- window ---
     "since_year": 2017,           # Binance BTC/USDT starts ~Aug 2017
-    "start": 2019-01-01,                # e.g. "2021-01-01" for walk-forward
+    "start": "2019-01-01",                # e.g. "2021-01-01" for walk-forward
     "end": None,
 }
 
