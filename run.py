@@ -31,14 +31,14 @@ CONFIG = {
     "daily_funding_rate": None,   # None => auto-fetch avg; or set e.g. 0.0003
 
     # --- window ---
-    "since_year": 2017,           # Binance BTC/USDT starts ~Aug 2017
+    "since_year": 2017,           # Binance SOL/USDT starts 2021
     "start": "2021-01-01",                # e.g. "2021-01-01" for walk-forward
     "end": None,
 }
 
 
 def main():
-    print("Fetching BTC/USDT daily from Binance...")
+    print("Fetching SOL/USDT daily from Binance...")
     df = fetch_ohlcv(symbol=CONFIG["symbol"], since_year=CONFIG["since_year"])
 
     if CONFIG["start"]:
