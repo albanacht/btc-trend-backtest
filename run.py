@@ -13,6 +13,7 @@ from backtest import run_backtest
 CONFIG = {
     # --- strategy params (match the Pine version) ---
     "sma_len": 200,
+    "symbol": "SOL/USD",
     "atr_len": 14,
     "atr_mult": 0.5,
     "adx_len": 14,
@@ -38,7 +39,7 @@ CONFIG = {
 
 def main():
     print("Fetching BTC/USDT daily from Binance...")
-    df = fetch_ohlcv(since_year=CONFIG["since_year"])
+    df = fetch_ohlcv(symbol=CONFIG["symbol"], since_year=CONFIG["since_year"])
 
     if CONFIG["start"]:
         df = df[df.index >= pd.Timestamp(CONFIG["start"])]
